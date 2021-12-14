@@ -17,12 +17,12 @@
 }
 
  @font-face {
-   src: url('fonts/Inter-bold.woff2') format('woff2'),
-        url('fonts/Inter-bold.woff') format('woff'),
-        url('fonts/Inter-bold.ttf') format('truetype'),
-        url('fonts/Inter-bold.eot') format('eot');
+   src: url('fonts/Inter-semibold.woff2') format('woff2'),
+        url('fonts/Inter-semibold.woff') format('woff'),
+        url('fonts/Inter-semibold.ttf') format('truetype'),
+        url('fonts/Inter-semibold.eot') format('eot');
         font-family: 'Inter';
-        font-weight: bold;
+        font-weight: semibold;
 }
 @font-face {
   src: url('fonts/Inter-bolditalic.woff2') format('woff2'),
@@ -43,15 +43,15 @@
   }
 }
 
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: Inter, Arial, sans-serif;
+
+
+
+
+
+div, section, footer, main, p {
+
+  border: 1px solid hotpink;
+
 }
 
 
@@ -60,6 +60,33 @@
 
 
 
+
+
+
+
+.page {
+
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+
+.page__logo {
+
+}
+
+
+.page__logo_place_header {
+  position: absolute;
+  width: 183px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+
+}
 
 
 
@@ -67,51 +94,517 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+
 }
 
-.page__logo {
 
-}
 
-.page__logo_place_header {
+.header__title {
   position: absolute;
-  top: 30px;
+  align-self: center;
   left: 64px;
-  z-index: 1;
+  width: 730px;
+  height: 96px;
+  font-size: 102px;
+  font-style: semibold;
+  box-sizing: content-box;
 }
 
 
-.title {
+
+.header__subtitle {
+  position: absolute;
+  align-self: space-between;
+  width: 388px;
+  height: 25px;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
 
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+
 .header__square-pic {
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
   position: absolute;
   right: 0;
-  bottom: 0;
-  z-index: -1;
+  top: 64px;
+
+
+
+
+
+
+
+
+
 
 }
+
+
+
+
 
 .header__square-pic_rotation{
+
   transform: translate(0, 50%);
-  animation: rotation 20s ease-in-out infinite;
+
+  animation: rotation 20s infinite;
+
 }
+
+
+
+
 
 .header__link {
 
+
+
+
+
 }
 
 
-/* и элемента с модификатором вида ключ-значение */
+
+
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+.content {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.description {
+  display: flex;
+  align-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+.two-columns {
+display: flex;
+align-self: center;
+width: 80%;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.two-columns__brief {
+
+width: 175px;
+font-size: 18px;
+line-height: 1.2;
+font-style: normal;
+}
+
+
+
+
+
+
+
+.two-columns__main-text {
+
+
+  display: flex;
+
+  width: 80%;
+  min-width: 784px;
+
+
+  flex-direction: column;
+
+
+
+}
+
+
+
+
+
+
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+margin: 0px;
+
+
+
+}
+
+.page_margin30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.two-columns__span-accent {
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.techniques {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.video {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.oakley {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+
+
+.feynman {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+.digits {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.khan {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.kaufman {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.resources {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+.footer {
+
+  height: 100vh;
+
+  min-height: 600px;
+
+  max-height: 756px;
+
+  display: block;
+
+
+
+
+
+
+
+  min-width: 1100px;
+
+  max-width: 1600px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .table__cell_theme_dark {
+
   width: 200px;
+
   color: white;
+
   margin-right: 0;
+
   margin-top: 80px;
+
 }
 
