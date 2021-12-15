@@ -1,34 +1,34 @@
 @font-face {
-  src: url('fonts/Inter-Regular.woff2') format('woff2'),
-       url('fonts/Inter-Regular.woff') format('woff'),
-       url('fonts/Inter-Regular.ttf') format('truetype'),
-       url('fonts/Inter-Regular.eot') format('eot');
+  src: url('./fonts/Inter-Regular.woff2') format('woff2'),
+       url('./fonts/Inter-Regular.woff') format('woff'),
+       url('./fonts/Inter-Regular.ttf') format('truetype'),
+       url('./fonts/Inter-Regular.eot') format('eot');
        font-family: 'Inter';
 
 }
 
 @font-face {
-  src: url('fonts/Inter-italic.woff2') format('woff2'),
-       url('fonts/Inter-italic.woff') format('woff'),
-       url('fonts/Inter-italic.ttf') format('truetype'),
-       url('fonts/Inter-italic.eot') format('eot');
+  src: url('./fonts/Inter-italic.woff2') format('woff2'),
+       url('./fonts/Inter-italic.woff') format('woff'),
+       url('./fonts/Inter-italic.ttf') format('truetype'),
+       url('./fonts/Inter-italic.eot') format('eot');
        font-family: 'Inter';
        font-style: italic;
 }
 
  @font-face {
-   src: url('fonts/Inter-semibold.woff2') format('woff2'),
-        url('fonts/Inter-semibold.woff') format('woff'),
-        url('fonts/Inter-semibold.ttf') format('truetype'),
-        url('fonts/Inter-semibold.eot') format('eot');
+   src: url('./fonts/Inter-bold.woff2') format('woff2'),
+        url('./fonts/Inter-bold.woff') format('woff'),
+        url('./fonts/Inter-bold.ttf') format('truetype'),
+        url('./fonts/Inter-bold.eot') format('eot');
         font-family: 'Inter';
-        font-weight: semibold;
+        font-weight: bold;
 }
 @font-face {
-  src: url('fonts/Inter-bolditalic.woff2') format('woff2'),
-       url('fonts/Inter-bolditalic.woff') format('woff'),
-       url('fonts/Inter-bolditalic.ttf') format('truetype'),
-       url('fonts/Inter-bolditalic.eot') format('eot');
+  src: url('./fonts/Inter-bolditalic.woff2') format('woff2'),
+       url('./fonts/Inter-bolditalic.woff') format('woff'),
+       url('./fonts/Inter-bolditalic.ttf') format('truetype'),
+       url('./fonts/Inter-bolditalic.eot') format('eot');
        font-family: 'Inter';
        font-style: italic;
        font-weight: bold;
@@ -48,7 +48,7 @@
 
 
 
-div, section, footer, main, p {
+div, section, footer, main, p, h1, h2, h3, h4, h5, h6, img {
 
   border: 1px solid hotpink;
 
@@ -108,10 +108,10 @@ div, section, footer, main, p {
   align-self: center;
   left: 64px;
   width: 730px;
-  height: 96px;
   font-size: 102px;
-  font-style: semibold;
+  font-weight: bold;
   box-sizing: content-box;
+  line-height: 96px;
 }
 
 
@@ -120,7 +120,7 @@ div, section, footer, main, p {
   position: absolute;
   align-self: space-between;
   width: 388px;
-  height: 25px;
+  line-height: 25px;
   left: 64px;
   bottom: 30px;
   font-size: 18px;
@@ -136,15 +136,6 @@ div, section, footer, main, p {
   right: 0;
   top: 64px;
 
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -159,17 +150,6 @@ div, section, footer, main, p {
 
 }
 
-
-
-
-
-.header__link {
-
-
-
-
-
-}
 
 
 
@@ -227,6 +207,7 @@ div, section, footer, main, p {
   align-content: space-between;
   padding-top: 100px;
   padding-bottom: 100px;
+  justify-content: center;
 }
 
 
@@ -237,10 +218,10 @@ div, section, footer, main, p {
 
 .two-columns {
 display: flex;
-align-self: center;
+align-self:auto;
 width: 80%;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 
 }
 
@@ -293,8 +274,8 @@ font-style: normal;
   font-size: 24px;
   line-height: 34px;
   font-style: normal;
-margin: 0px;
-
+  margin: 0px;
+  
 
 
 }
@@ -312,7 +293,9 @@ margin: 0px;
 
 .two-columns__span-accent {
 
-
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
 
 
 
@@ -329,55 +312,80 @@ margin: 0px;
 
 
 .techniques {
+    width: 80%;
+  padding-bottom: 100px;
+  margin: auto;
+}
 
-  height: 100vh;
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  min-height: 600px;
-
-  max-height: 756px;
-
-  display: block;
-
-
-
-
-
-
-
-  min-width: 1100px;
-
-  max-width: 1600px;
-
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
 }
 
 
+.cards {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  margin: 60px 50px;
+  justify-content: center;
+  width: 240px;
+}
+
+.cards__image {
+  align-self: center;
+  border-radius: 50%;
+  margin: 0 40px;
+  width: 160px;
+  height: 160px;
+  
+ 
+}
 
 
+.cards__title {
+margin-top: 43px;
+margin-bottom: 16px;
+line-height: 23px;
+font-size: 18px;
+text-align: center;
+margin-bottom: 18px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
+}
 
 
 
 .video {
 
-  height: 100vh;
-
-  min-height: 600px;
-
-  max-height: 756px;
-
-  display: block;
-
-
-
-
-
-
-
-  min-width: 1100px;
-
-  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  
 
 }
 
+.video__iframes {
+ display: flex;
+ margin: auto;
+ flex-direction: row;
+ padding: 5px;
+}
 
 
 
@@ -385,28 +393,13 @@ margin: 0px;
 
 
 .oakley {
-
-  height: 100vh;
-
-  min-height: 600px;
-
-  max-height: 756px;
-
-  display: block;
-
-
-
-
-
-
-
-  min-width: 1100px;
-
-  max-width: 1600px;
-
+  padding-top: 160px;
+  background-color:#f2f2f2;  
 }
 
-
+.oakley_margin {
+  margin-top: -40px;
+}
 
 
 
