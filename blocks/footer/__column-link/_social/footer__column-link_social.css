@@ -1,0 +1,13 @@
+.footer__column-link_social {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration-line: none;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.footer__column-link_social:hover {
+  opacity: 85%;
+  transition: all 30ms ease-out;
+}
