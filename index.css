@@ -72,11 +72,3 @@
 @import url(./blocks/khan/__quote-author/khan__quote-author.css);
 @import url(./blocks/khan/__quote/khan__quote.css);
 @import url(./blocks/khan/__title/khan__title.css);
-@keyframes rotation {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
