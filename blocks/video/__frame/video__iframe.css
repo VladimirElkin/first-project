@@ -1,5 +1,13 @@
 .video__iframe {
-  padding-top: 25px;
+  border: 0;
+  width: 515px;
+  height: 316px;
+}
+
+.video__iframe:last-child {
   padding-left: 5px;
+}
+
+.video__iframe:first-child {
   padding-right: 5px;
- }
+}

@@ -4,3 +4,7 @@
   min-width: 784px;
   flex-direction: column;
 }
+
+.two-columns__main-text :last-child {
+  margin: 0;
+}
