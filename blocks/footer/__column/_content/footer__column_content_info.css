@@ -1,4 +1,5 @@
 .footer__column_content_info {
   flex-direction: column;
   flex-basis: content;
+  justify-content: flex-start;
 }

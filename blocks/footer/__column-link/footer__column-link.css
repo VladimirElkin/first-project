@@ -2,7 +2,6 @@
   line-height: 18px;
   font-size: 18px;
   font-weight: normal;
-  margin-bottom: 6px;
   text-decoration:none;
   color: #fff;
 }
@@ -11,3 +10,7 @@
   opacity: 85%;
   transition: all 30ms ease-out;
 }
+
+.footer__column-link:nth-child(2) {
+  margin: 10px 0;
+ }
