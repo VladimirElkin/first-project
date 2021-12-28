@@ -3,6 +3,5 @@
   height: 1006px;
   background-image: url(../../../images/kaufman-triangle.svg);
   position: absolute;
-  right: 0;
-  margin-right: -210px;
+  right: -210px;
 }
